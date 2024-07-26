@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { handleConsole } from "./handleConsole";
 
 export default function Users() {
   const [data, setData] = useState("");
@@ -11,6 +12,7 @@ export default function Users() {
       <button data-testid="btn" onClick={handleClick}>
         Click Me to Test
       </button>
+      <button onClick={handleConsole}>Click me & check console</button>
       <p>{data}</p>
     </div>
   );
